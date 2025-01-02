@@ -1,0 +1,334 @@
+﻿/* Custom CSS for Booking Page */
+
+.booking-container {
+    background-color: #f8f9fb; /* Màu nền của trang */
+    padding: 2rem;
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 2rem auto;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+}
+
+.booking-header {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a3353; /* Màu tiêu đề */
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.step-container {
+    margin-bottom: 2rem;
+}
+
+.step-title {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a3353;
+    margin-bottom: 1rem;
+}
+
+.step-number {
+    background-color: #2653d4;
+    color: white;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+}
+
+.step-content {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+    .step-content button {
+        background-color: #ffffff;
+        color: #1a3353;
+        padding: 0.8rem 1.2rem;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        font-weight: bold;
+        transition: background-color 0.2s ease;
+    }
+
+        .step-content button:hover {
+            background-color: #2653d4;
+            color: white;
+        }
+
+.confirm-button {
+    background-color: #e3e3e3;
+    color: #707070;
+    padding: 1rem;
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    cursor: not-allowed;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+    .confirm-button.enabled {
+        background-color: #1a3353;
+        color: white;
+        cursor: pointer;
+    }
+
+.note-text {
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+/* Selected Services Section */
+.selected-services-list {
+    background-color: #f1f5f9;
+    padding: 1rem;
+    border-radius: 8px;
+    margin-top: 1rem;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+
+.selected-service-item {
+    background-color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin: 0.5rem 0;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.total-payment {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2d9a43;
+    text-align: left;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .selected-service-item {
+        font-size: 12px;
+        padding: 0.4rem 0.8rem;
+    }
+
+    .total-payment {
+        font-size: 16px;
+    }
+}
+
+/* Technician Selection */
+.technician-selection {
+    margin-top: 1.5rem;
+}
+
+.technician-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #1a3353;
+    margin-bottom: 1rem;
+}
+
+.technician-dropdown {
+    margin-top: 1.5rem;
+    position: relative;
+}
+
+    .technician-dropdown .flex {
+        align-items: center;
+        cursor: pointer;
+    }
+
+.technician-arrow.rotate-right {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.technician-arrow.rotate-down {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+.technician-carousel {
+    margin-top: 1rem;
+    display: flex;
+    overflow-x: scroll;
+    padding: 0 10px;
+    gap: 1rem;
+}
+
+.technician-option {
+    flex-shrink: 0;
+    padding: 1rem;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    min-width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .technician-option.selected {
+        background-color: #2653d4;
+        color: white;
+        border: 1px solid #2653d4;
+    }
+
+.technician-image {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+.technician-options::-webkit-scrollbar {
+    display: none;
+}
+
+/* Date Picker */
+.date-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+}
+/* Date Dropdown Arrows */
+.date-arrow.rotate-right {
+    transform: rotate(0deg);
+    transition: transform 0.3s ease;
+}
+
+.date-arrow.rotate-down {
+    transform: rotate(90deg);
+    transition: transform 0.3s ease;
+}
+
+
+
+.date-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.8rem 1rem;
+    background-color: #f0f0f0;
+    border-radius: 8px;
+    cursor: pointer;
+    align-items: center;
+}
+
+    .date-item.selected {
+        background-color: #2653d4;
+        color: white;
+    }
+
+.weekend-status {
+    background-color: #f8d7da; /* Màu nền đỏ nhạt */
+    color: #c82333; /* Màu chữ đỏ */
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.today-status {
+    background-color: #d4edda; /* Màu nền xanh nhạt */
+    color: #155724; /* Màu chữ xanh đậm */
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+.weekday-status {
+    background-color: #e2e3e5; /* Màu nền xám nhạt */
+    color: #6c757d; /* Màu chữ xám đậm */
+    padding: 0.2rem 0.5rem;
+    border-radius: 4px;
+}
+
+/* Error Highlight */
+.error-border {
+    border: 2px solid red;
+    border-radius: 8px;
+}
+
+/* Time Selection Section */
+.time-selection {
+    margin-top: 2rem;
+}
+
+    .time-selection h3 {
+        font-size: 18px;
+        font-weight: bold;
+        color: #1a3353;
+        margin-bottom: 1rem;
+    }
+
+.time-slots {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.time-slot {
+    padding: 0.5rem 1rem;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #333;
+    transition: background-color 0.2s ease;
+}
+
+    .time-slot:hover {
+        background-color: #2653d4;
+        color: white;
+    }
+
+    .time-slot.selected {
+        background-color: #2653d4;
+        color: white;
+        border-color: #2653d4;
+    }
+
+    .time-slot.unavailable {
+        background-color: #e2e3e5;
+        color: #6c757d;
+        cursor: not-allowed;
+        pointer-events: none;
+    }
+
+        .time-slot.unavailable:hover {
+            background-color: #e2e3e5; /* No hover effect for unavailable slots */
+        }
+
+@media (max-width: 768px) {
+    .time-slot {
+        font-size: 12px;
+        padding: 0.4rem 0.8rem;
+    }
+}
+
+

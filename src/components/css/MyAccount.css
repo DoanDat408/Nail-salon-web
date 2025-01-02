@@ -1,0 +1,59 @@
+﻿/* MyAccount.css */
+
+.my-account-container {
+    margin-top: 80px; /* Thêm khoảng trống phía trên để tránh bị che bởi Navbar */
+    padding: 20px;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+    .my-account-container h2 {
+        font-size: 1.8rem;
+        margin-bottom: 20px;
+        color: #333;
+    }
+
+    .my-account-container p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+        color: #555;
+    }
+
+.account-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+    .account-actions .edit-account-button,
+    .account-actions .delete-account-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .account-actions .edit-account-button {
+        background-color: #007bff;
+        color: white;
+        border: none;
+    }
+
+        .account-actions .edit-account-button:hover {
+            background-color: #0056b3;
+        }
+
+    .account-actions .delete-account-button {
+        background-color: #dc3545;
+        color: white;
+        border: none;
+    }
+
+        .account-actions .delete-account-button:hover {
+            background-color: #c82333;
+        }

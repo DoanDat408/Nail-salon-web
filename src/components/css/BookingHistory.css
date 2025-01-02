@@ -1,0 +1,42 @@
+.booking-history {
+    padding: 100px 20px 20px; /* Adds top padding to prevent overlap with navbar */
+    background-color: #f5f5f5;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.booking-history-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.booking-list {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    max-width: 600px; /* Centers the list and restricts its width */
+}
+
+.booking-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+    .booking-card p {
+        margin: 5px 0;
+        font-size: 14px;
+        color: #555;
+    }
+
+        .booking-card p strong {
+            color: #333;
+        }

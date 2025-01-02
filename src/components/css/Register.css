@@ -1,0 +1,62 @@
+﻿/* Register.css */
+
+/* Container for the entire register page */
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Main container for the register form */
+.register-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Adjusted for a wider form */
+    max-width: 90%;
+    text-align: center;
+}
+
+    /* Heading inside the register form */
+    .register-container h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    /* Form group wrapper */
+    .register-container .form-group {
+        margin-bottom: 15px;
+        text-align: left;
+    }
+
+    /* Input fields styling */
+    .register-container input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+        border: 1px solid #ccc;
+        font-size: 16px;
+        box-sizing: border-box; /* Ensures padding does not affect width */
+    }
+
+    /* Register button styling */
+    .register-container .register-button {
+        background-color: #007bff;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 4px;
+        font-size: 16px;
+        cursor: pointer;
+        border: none;
+        transition: background-color 0.3s;
+        width: 100%;
+        margin-top: 10px;
+    }
+
+        /* Hover effect for the button */
+        .register-container .register-button:hover {
+            background-color: #0056b3;
+        }

@@ -1,0 +1,323 @@
+﻿/* Carousel Styles */
+.custom-carousel-container {
+    width: 100vw;
+    overflow: hidden;
+    position: relative;
+    left: 50%;
+    margin-left: -50vw;
+}
+
+.custom-carousel-img {
+    width: 100%;
+    height: 560px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-inner {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.carousel:hover .carousel-control-prev,
+.carousel:hover .carousel-control-next {
+    opacity: 1;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+}
+
+    .carousel-caption h1,
+    .carousel-caption h2,
+    .carousel-caption h3 {
+        margin: 10px 0; /* Adjust margins */
+    }
+
+.caption-small {
+    font-size: 2.5rem;
+    color: aquamarine;
+}
+
+.caption-medium {
+    font-size: 2rem;
+}
+
+.caption-large {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.spaced {
+    letter-spacing: 0.1rem;
+}
+
+/* Fixed Buttons */
+.fixed-buttons-container {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 0px;
+    z-index: 1000;
+}
+
+    .fixed-buttons-container .custom-button {
+        background-color: #374151;
+        color: white;
+        padding: 10px 20px;
+        border-radius: 50px;
+        font-size: 16px;
+        text-align: center;
+        transition: background-color 0.3s;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+        .fixed-buttons-container .custom-button:hover {
+            background-color: #1f2937;
+        }
+
+        .fixed-buttons-container .custom-button i {
+            margin-right: 8px;
+        }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .fixed-buttons-container {
+        bottom: 10px;
+        right: 10px;
+    }
+
+        .fixed-buttons-container .custom-button {
+            font-size: 14px;
+            padding: 8px 16px;
+        }
+}
+
+/* Gallery Styles */
+.grid img {
+    transition: transform 0.3s ease-in-out;
+}
+
+    .grid img:hover {
+        transform: scale(1.05);
+    }
+
+.custom-gallery-img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+    .custom-gallery-img:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    }
+
+/* Responsive Gallery Adjustments */
+@media (max-width: 1024px) {
+    .custom-gallery-img {
+        height: 350px;
+    }
+}
+
+@media (max-width: 768px) {
+    .custom-gallery-img {
+        height: 250px;
+    }
+}
+
+/* Service Section Styles */
+section.my-12, section.my-16 {
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+section.text-center h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.service-item {
+    transition: box-shadow 0.3s;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .service-item img {
+        width: 150px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 10px;
+        margin-bottom: 1rem;
+    }
+
+    .service-item h3 {
+        font-size: 1.75rem;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+    }
+
+    .service-item p {
+        font-size: 1rem;
+        color: #4A5568; /* Slightly gray text */
+        line-height: 1.5;
+    }
+
+    .service-item:hover {
+        box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    }
+
+/* Responsive Section Adjustments */
+@media (max-width: 1024px) {
+    section.text-center h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    section.text-center h2 {
+        font-size: 1.75rem;
+    }
+
+    .service-item img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Phần Contacts */
+#contacts {
+    margin: 2rem 0;
+    padding: 2rem;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+    #contacts h2 {
+        font-size: 2.5rem;
+        text-align: center;
+        margin-bottom: 2rem;
+    }
+
+    /* Căn chỉnh cả hai khung để có chiều cao đồng đều */
+    #contacts .flex.flex-wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch; /* Đảm bảo cả hai khung kéo dài bằng nhau */
+    }
+
+    /* Khung Hour */
+    #contacts .w-full.md\:w-2\/3 {
+        background-color: white;
+        padding: 20px 25px; /* Tăng padding để khoảng cách giữa các dòng đều hơn */
+        border-radius: 10px 0 0 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+        #contacts .w-full.md\:w-2\/3 li {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem; /* Điều chỉnh khoảng cách giữa các dòng */
+            line-height: 1.8; /* Tăng khoảng cách giữa các dòng chữ để đều hơn */
+        }
+
+            #contacts .w-full.md\:w-2\/3 li strong {
+                font-weight: bold;
+            }
+
+    /* Khung Address */
+    #contacts .w-full.md\:w-1\/3 {
+        background-color: #5a6473;
+        color: #fff;
+        padding: 20px;
+        border-radius: 0 10px 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+        #contacts .w-full.md\:w-1\/3 h3,
+        #contacts .w-full.md\:w-1\/3 h4 {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        #contacts .w-full.md\:w-1\/3 p {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+        }
+
+    /* Điều chỉnh icon và căn chỉnh cùng hàng với nội dung */
+    #contacts .icon-container {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        margin-top: 10px; /* Giảm khoảng cách giữa số điện thoại và icon */
+    }
+
+    #contacts h4 {
+        font-weight: bold;
+        margin-bottom: 10px;
+    }
+
+    /* Đảm bảo chiều cao của cả hai khung đồng đều */
+    #contacts .w-full.md\:w-2\/3,
+    #contacts .w-full.md\:w-1\/3 {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        min-height: 100%;
+    }
+
+    #contacts .w-full.md\:w-2\/3 {
+        background-color: white;
+        padding: 20px;
+        padding-left: 80px; /* Điều chỉnh khoảng cách vào bên trái, bao gồm cả chữ "Hour" */
+        border-radius: 10px 0 0 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+
+
+
+
+
+

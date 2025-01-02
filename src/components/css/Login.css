@@ -1,0 +1,115 @@
+﻿.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Chiều cao 100% của viewport */
+    background-color: #f7f7f7; /* Màu nền nhẹ */
+}
+
+.login-container {
+    background-color: white;
+    padding: 20px; /* Giảm padding để khung nhỏ hơn */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 320px; /* Thu nhỏ chiều rộng tối đa của khung login */
+    width: 100%;
+    text-align: center;
+}
+
+    .login-container h2 {
+        margin-bottom: 15px;
+        font-size: 1.5rem; /* Giảm kích thước chữ tiêu đề */
+        color: #333;
+    }
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+    .form-group label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 8px; /* Giảm kích thước ô input */
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        font-size: 0.9rem; /* Giảm kích thước font */
+    }
+
+.login-button {
+    width: 100%;
+    padding: 8px; /* Giảm kích thước button */
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem; /* Giảm kích thước font của button */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px; /* Giảm khoảng cách */
+}
+
+    .login-button:hover {
+        background-color: #0056b3;
+    }
+
+.separator {
+    margin: 10px 0;
+    font-weight: bold;
+    color: #777;
+}
+
+.google-button {
+    width: 100%;
+    padding: 8px; /* Giảm kích thước button Google */
+    background-color: #db4437;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem; /* Giảm kích thước font */
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    margin-bottom: 15px; /* Giảm khoảng cách */
+}
+
+    .google-button:hover {
+        background-color: #c23321;
+    }
+
+.google-icon {
+    margin-right: 8px;
+    font-size: 1rem; /* Giảm kích thước icon */
+}
+
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+    .register-container p {
+        margin-bottom: 8px;
+        color: #555;
+    }
+
+.login-register-button {
+    background-color: #28a745;
+    color: white;
+    padding: 8px; /* Giảm kích thước button Register */
+    border-radius: 4px;
+    font-size: 0.9rem; /* Giảm kích thước font */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    .register-button:hover {
+        background-color: #218838;
+    }

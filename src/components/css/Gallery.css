@@ -1,0 +1,61 @@
+﻿.gallery-grid {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Hiển thị 3 hình ảnh trên mỗi hàng */
+    gap: 1.5rem; /* Khoảng cách giữa các hình ảnh */
+}
+
+.gallery-section {
+    max-width: 1200px; /* Giới hạn độ rộng tối đa */
+    margin: 0 auto; /* Căn giữa toàn bộ nội dung trong container */
+    padding: 20px;
+}
+
+/* Đảm bảo rằng mỗi ảnh đều có cùng kích thước */
+.gallery-grid img {
+    width: 100%;
+    height: 350px; /* Chiều cao cố định cho hình ảnh */
+    object-fit: cover; /* Cắt và điều chỉnh hình ảnh để vừa với khung */
+    border-radius: 10px;
+}
+.gallery-item {
+cursor: pointer;
+border-radius: 8px;
+transition: transform 0.3s ease;
+}
+
+.gallery-item:hover {
+    transform: scale(1.05);
+}
+
+/* Tùy chỉnh Lightbox */
+.yarl__thumbnails {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 0;
+    margin-top: 16px;
+}
+
+.yarl__slide {
+    max-height: 80vh;
+    object-fit: cover;
+}
+
+.yarl__thumbnails img {
+    background-color: rgba(0, 0, 0, 0.5);
+    width: auto;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.yarl__thumbnails-container {
+    display: flex;
+    justify-content: center; /* Căn giữa các thumbnails */
+    gap: 10px; /* Khoảng cách giữa các thumbnails */
+}
+
+.yarl__thumbnails img:hover {
+    transform: scale(1.1); /* Hiệu ứng phóng to khi hover */
+    transition: transform 0.2s ease;
+}

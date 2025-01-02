@@ -1,0 +1,101 @@
+﻿/* Đặt lại một số thuộc tính cơ bản */
+nav {
+    background-color: #1a1a1a;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    nav .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav h1 {
+        font-size: 1.75rem;
+        font-weight: bold;
+        color: white;
+        margin: 0;
+    }
+
+    nav .space-x-8 > a, nav .space-x-8 > button {
+        font-size: 1rem;
+        color: white;
+        text-decoration: none;
+        margin-left: 20px; /* Khoảng cách giữa các mục */
+        cursor: pointer;
+        transition: color 0.3s;
+        padding: 5px 0;
+    }
+
+        nav .space-x-8 > a:hover, nav .space-x-8 > button:hover {
+            color: #cccccc; /* Màu khi hover */
+        }
+
+    nav .space-x-8 > button {
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    nav h1 {
+        font-size: 1.5rem;
+    }
+
+    nav .space-x-8 > a, nav .space-x-8 > button {
+        font-size: 0.875rem;
+        margin-left: 15px;
+    }
+}
+
+/* Đảm bảo rằng dropdown không bị ẩn khi hover */
+.navbar-item {
+    position: relative;
+}
+
+.navbar-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    z-index: 1000;
+    width: 150px;
+}
+
+.navbar-item:hover .navbar-dropdown {
+    display: block;
+}
+
+.navbar-item button {
+    background: none; 
+    border: none; 
+    padding: 0; 
+    color: white; 
+    cursor: pointer; 
+    font-size: 1rem; 
+}
+
+.navbar-dropdown .navbar-item button {
+    color: #333; 
+    padding: 10px 20px; 
+    background-color: transparent; 
+    display: block; 
+    width: 100%; 
+    text-align: left; 
+    border-radius: 0; 
+}
+
+    .navbar-dropdown .navbar-item button:hover {
+        background-color: #f5f5f5; 
+        color: #000; 
+    }
+
+
+
